@@ -28,10 +28,6 @@
          "imagewidth":256,
          "margin":0,
          "name":"pacman-tiles",
-         "properties":
-            {
-
-            },
          "spacing":0,
          "tileheight":16,
          "tilewidth":16
