@@ -65,7 +65,8 @@
             //  Remove the next 2 lines if running locally
             this.load.baseURL = 'https://siotasandreas.github.io/pacman/';
             this.load.crossOrigin = 'anonymous';
-
+            
+            this.load.audio('sound', 'assets/eating.mp3');
             this.load.image('dot', 'assets/strawberry.png');
             this.load.image('tiles', 'assets/pacman-tiles.png');
             this.load.spritesheet('pacman', 'assets/newchar.png', 32, 32);
@@ -225,7 +226,8 @@
         eatDot: function (pacman, dot) {
 
             dot.kill();
-
+            this.sound.play('sound');
+            
             if (this.dots.total === 0)
             {
                 this.dots.callAll('revive');
