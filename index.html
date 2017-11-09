@@ -20,7 +20,7 @@
 
     <script type="text/javascript">
 
-    var game = new Phaser.Game(500, 560, Phaser.AUTO);
+    var game = new Phaser.Game(470, 510, Phaser.AUTO);
 
     var Pacman = function (game) {
 
@@ -109,7 +109,7 @@
             this.pacman.play('munch');
             this.move(Phaser.LEFT);
             
-            this.scoreText = game.add.text(0, 520, 'Score: 0', {
+            this.scoreText = game.add.text(0, 500, 'Score: 0', {
                     font: 'arial',
                     fontSize: '70px',
                     fill: 'yellow'
